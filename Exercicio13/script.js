@@ -2,12 +2,17 @@
 
 while (true) {
     let numero = parseInt(prompt("Digite um número: "));
-    if (numero < 0) {
-        alert("Negativo");
-    } else if (numero > 0) {
-        alert("Positivo");
-    }
-    else (numero == 0) {
-        alert("Zero");
+    switch (numero) {
+        case (numero < 0):
+            alert("Negativo");
+        case (numero > 0):
+            alert("Positivo");
+
+        case (numero == 0):
+            alert("Zero");
+
+        default:
+            alert("Valor inválido!");
+            break;
     }
 }
